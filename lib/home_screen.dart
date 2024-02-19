@@ -7,32 +7,43 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Componentes de flutter'),
+      title: const Text('Componentes de flutter'),
       ),
         body: ListView(
           children: [
             ListTile(
-              leading: const Icon(Icons.hail_rounded),
-              title: Text('Hora de salida',
-              style: Theme.of(context).textTheme.headlineLarge,
-              ),
-              subtitle: const Text('11-02-2024 - Las Vegas'),
-              trailing: const Icon(Icons.arrow_circle_right),
-            ),
-            ListTile(
-              leading: const Icon(Icons.mode_of_travel),
-              title: Text('Duración',
+              leading: const Icon(Icons.input_rounded),
+              title: Text(
+                'Entradas',
                 style: Theme.of(context).textTheme.headlineLarge,
               ),
-              subtitle: const Text('11-02-2024 - Las Vegas'),
+              subtitle: const Text(
+                'Diferentes widgets para entradas de flutter',
+              ),
               trailing: const Icon(Icons.arrow_circle_right),
             ),
+            const Divider(),
             ListTile(
-              leading: const Icon(Icons.wallet_travel_sharp),
-              title: Text('LLegada',
+              leading: const Icon(Icons.list_alt_rounded),
+              title: Text(
+                'ListView.builder',
                 style: Theme.of(context).textTheme.headlineLarge,
               ),
-              subtitle: const Text('11-02-2024 - Las Vegas'),
+              subtitle: const Text(
+                'Scroll infinito'
+                ),
+              trailing: const Icon(Icons.arrow_circle_right),
+            ),
+            const Divider(),
+            ListTile(
+              leading: const Icon(Icons.notification_add),
+              title: Text(
+                'Notificaciones',
+                style: Theme.of(context).textTheme.headlineLarge,
+              ),
+              subtitle: const Text(
+                'Creación de notificaciones'
+                ),
               trailing: const Icon(Icons.arrow_circle_right),
             ),
           ],
