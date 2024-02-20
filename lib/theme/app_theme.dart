@@ -9,16 +9,19 @@ class AppTheme{
     scaffoldBackgroundColor: backColor,
     appBarTheme: const AppBarTheme(color: mainColor),
     textTheme: TextTheme(
-          headlineLarge: GoogleFonts.dancingScript(
-            color: mainColor,
+          headlineLarge: GoogleFonts.abel(
+            color: const Color.fromARGB(221, 12, 11, 11),
             fontSize: 25.0,
             fontWeight: FontWeight.w500,
-            decoration: TextDecoration.underline,
             decorationColor: mainColor,
-            decorationStyle: TextDecorationStyle.wavy,
-            decorationThickness: 3.0,
+            decorationStyle: TextDecorationStyle.double,
+            decorationThickness: 1.5,
             fontStyle: FontStyle.italic,
           ), 
-        ),
+          bodySmall: GoogleFonts.dancingScript(
+            color: const Color.fromARGB(255, 40, 4, 107),
+            fontSize: 20,
+            ),
+          ),
   );
 }
