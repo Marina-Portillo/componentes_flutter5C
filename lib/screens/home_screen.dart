@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:practica3/screens/infinite_list_screen.dart';
+import 'package:practica3/screens/inputs_screen.dart';
+import 'package:practica3/screens/notifications_screen.dart';
 import 'package:practica3/theme/app_theme.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -23,7 +26,14 @@ class HomeScreen extends StatelessWidget {
                 'Diferentes widgets para entradas de flutter',
                 style: AppTheme.lightTheme.textTheme.bodySmall,
               ),
-              trailing: const Icon(Icons.arrow_circle_right),
+              trailing: const Icon(Icons.arrow_circle_right
+              ),
+              onTap: (){
+                final ruta1 = MaterialPageRoute(builder: (context){
+                  return const InputsScreen();
+                });
+                Navigator.push(context, ruta1);
+              }
             ),
             const Divider(),
             ListTile(
@@ -38,7 +48,14 @@ class HomeScreen extends StatelessWidget {
                 'Scroll infinito',
                 style: AppTheme.lightTheme.textTheme.bodySmall,
                 ),
-              trailing: const Icon(Icons.arrow_circle_right),
+              trailing: const Icon(Icons.arrow_circle_right
+              ),
+              onTap: (){
+                final ruta2 = MaterialPageRoute(builder: (context){
+                  return const InfiniteListScreen();
+                });
+                Navigator.push(context, ruta2);
+              }
             ),
             const Divider(),
             ListTile(
@@ -53,7 +70,14 @@ class HomeScreen extends StatelessWidget {
                 'Creación de notificaciones',
                 style: AppTheme.lightTheme.textTheme.bodySmall,
                 ),
-              trailing: const Icon(Icons.arrow_circle_right),
+              trailing: const Icon(Icons.arrow_circle_right
+              ),
+              onTap: (){
+                final ruta3 = MaterialPageRoute(builder: (context){
+                  return const NotificationsScreen();
+                });
+                Navigator.push(context, ruta3);
+              }
             ),
           ],
         ),
