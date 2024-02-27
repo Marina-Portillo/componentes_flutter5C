@@ -41,6 +41,13 @@ class AppTheme{
             decorationThickness: 1.5,
             fontStyle: FontStyle.italic,
           ), 
+          headlineMedium: GoogleFonts.abel(
+            color: const Color.fromARGB(221, 12, 11, 11),
+            fontSize: 25.0,
+            fontWeight: FontWeight.w500,
+            decorationStyle: TextDecorationStyle.double,
+            decorationThickness: 1.5,
+          ), 
           bodySmall: GoogleFonts.dancingScript(
             color: const Color.fromARGB(255, 40, 4, 107),
             fontSize: 20,
