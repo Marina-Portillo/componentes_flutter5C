@@ -7,7 +7,30 @@ class AppTheme{
 
   static final ThemeData lightTheme = ThemeData.light().copyWith(
     scaffoldBackgroundColor: backColor,
-    appBarTheme: const AppBarTheme(color: mainColor),
+    appBarTheme: AppBarTheme(
+      color: mainColor,
+      titleTextStyle: GoogleFonts.alice(
+        color: backColor,
+        fontSize: 30.0,
+        fontWeight: FontWeight.bold,
+      ),
+      ),
+      iconTheme: const IconThemeData(
+      color: mainColor,
+      size: 35.0,
+    ),
+    elevatedButtonTheme: ElevatedButtonThemeData(
+      style: ButtonStyle(
+        backgroundColor: MaterialStateProperty.all(
+          mainColor,
+          ),
+          foregroundColor: MaterialStateProperty.all(const Color.fromARGB(255, 233, 232, 232),
+          ),
+          textStyle: MaterialStateProperty.all(
+            GoogleFonts.pacifico(fontSize: 20),
+        ),
+      )
+    ),
     textTheme: TextTheme(
           headlineLarge: GoogleFonts.abel(
             color: const Color.fromARGB(221, 12, 11, 11),
