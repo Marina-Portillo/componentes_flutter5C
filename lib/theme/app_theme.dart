@@ -52,6 +52,10 @@ class AppTheme{
             color: const Color.fromARGB(255, 40, 4, 107),
             fontSize: 20,
             ),
+            bodyMedium: GoogleFonts.dancingScript(
+            color: Color.fromARGB(255, 8, 8, 8),
+            fontSize: 20,
+            ),
           ),
   );
 }
