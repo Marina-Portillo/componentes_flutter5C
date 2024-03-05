@@ -18,3 +18,5 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  assets: 
+    - assets/imgs/imagen3.gif
