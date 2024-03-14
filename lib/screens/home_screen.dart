@@ -130,6 +130,7 @@ class HomeScreen extends StatelessWidget {
                 Navigator.push(context, ruta4);
               }
             ),
+            
           ],
         ),
       );
