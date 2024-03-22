@@ -44,8 +44,7 @@ class _InputsScreenState extends State<InputsScreen> {
       selectedCheckOptions: selectedCheckOptions,
     ),
   );
-    case 5: SystemChannels.platform.invokeMethod('systemNavigator.pop');
-        break;
+
           } 
     selectedIndex = index;
       print('selectedIndex = $selectedIndex');
